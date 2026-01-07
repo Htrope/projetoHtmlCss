@@ -1,0 +1,87 @@
+:root {
+  --fonte-titulo: 'Anton', sans-serif;
+  --fonte-texto: 'Source Sans 3', sans-serif;
+}
+
+
+.localizacao {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  padding: 100px 150px;
+}
+
+
+.linha {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: #ccc;
+  opacity: 0.6;
+}
+
+/* Info */
+.info h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 84px;
+  margin-bottom: 20px;
+}
+
+.info h2 {
+  font-family: var(--fonte-titulo);
+  margin-top: 60px;
+  font-size: 50px;  
+}
+
+.info p {
+  font-family: var(--fonte-texto);
+  line-height: 1.6;
+}
+
+/* Mapa */
+.mapa {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  transform: translateY(50px);
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(100%) brightness(75%) contrast(110%);
+}
+
+
+.mapa::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+}
+/* setinha */
+.mapa::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.mapa::after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 7px);
+  left: 50%;
+  width: 2px;
+  height: 18px;
+  background: #000;
+  transform: translateX(-50%);
+  z-index: 2;
+}
