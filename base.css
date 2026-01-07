@@ -24,8 +24,8 @@
 }
 
 body {
-    background-color: var(--color-black); /* O site é majoritariamente escuro */
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-black);
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
 }
@@ -43,15 +43,12 @@ p {
     font-weight: 400;
 }
 
-/* --- SISTEMA DE TEMAS (Fundamental para o grupo) --- */
 
-/* Tema Escuro (Padrão: Seção Somos uma Academia / Footer) */
 .theme-dark {
     background-color: var(--color-black);
     color: var(--color-white);
 }
 
-/* Tema Claro (Seção: Agendar uma Visita) */
 .theme-light {
     background-color: var(--color-white);
     color: var(--color-black);
@@ -61,13 +58,6 @@ p {
     color: var(--color-black);
 }
 
-/* Tema Cinza Suave (Opcional, usando a Cor 2) */
-.theme-soft {
-    background-color: var(--color-off-white);
-    color: var(--color-dark-gray);
-}
-
-/* --- COMPONENTES GLOBAIS --- */
 
 /* Botão Principal (Pill Shape) */
 .btn-pill {
@@ -89,14 +79,4 @@ p {
     background-color: var(--color-white);
     color: var(--color-black);
     border-color: var(--color-white);
-}
-
-/* Grid de 24 colunas (Para alinhar como o Fluid Engine) */
-.sqs-grid {
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    gap: 11px;
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
 }

@@ -1,14 +1,10 @@
-/* ==========================================================================
-   HEADER - Configurações de Estilo
-   ========================================================================== */
-
 .main-header {
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
     padding: calc(10px + 0.5vw) 0;
-    background-color: var(--color-black); /* Cor 3 */
+    background-color: var(--color-black);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -59,26 +55,8 @@
     margin-right: 8px;
 }
 
-/* Status do Carrinho */
-.cart-status {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--color-white);
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.cart-icon {
-    font-size: 18px;
-}
-
-/* ==========================================================================
-   FOOTER - Configurações de Estilo
-   ========================================================================== */
-
 .main-footer {
-    background-color: var(--color-black); /* Cor 5 */
+    background-color: var(--color-black);
     color: var(--color-white);
     padding: 40px 40px 40px 40px;
     margin-bottom: 100px;
@@ -89,7 +67,6 @@
     margin: 0 auto;
 }
 
-/* Seção Superior: Newsletter */
 .newsletter-section {
     display: flex;
     justify-content: space-between;
@@ -107,10 +84,9 @@
     max-width: 500px;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--color-off-white); /* Cor 2 */
+    color: var(--color-off-white);
 }
 
-/* Formulário de Email no Footer */
 .newsletter-form {
     display: flex;
     gap: 12px;
@@ -154,7 +130,7 @@
 /* Linha Divisória */
 .footer-divider {
     border: 0;
-    border-top: 1px solid var(--color-white); /* Cor 4 */
+    border-top: 1px solid var(--color-white);
     margin-bottom: 60px;
 }
 
@@ -211,7 +187,7 @@
 
 .social-icons a {
     font-size: 20px;
-    filter: grayscale(1) invert(1); /* Deixa ícones brancos se forem imagens */
+    filter: grayscale(1) invert(1); 
     transition: opacity var(--transition);
 }
 
@@ -219,7 +195,7 @@
     opacity: 0.7;
 }
 
-/* Responsividade Básica (Mobile) */
+/* Responsividade Básica */
 @media (max-width: 1350px) {
     .newsletter-form {
         flex-direction: column;
@@ -229,4 +205,28 @@
         align-self: flex-end;
         margin-top: 16px;
     }
+}
+
+/* Modificador para Header Branco */
+.main-header.theme-light {
+    background-color: var(--color-white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Ajusta o texto, logo e links para preto quando o fundo for branco */
+.main-header.theme-light .logo,
+.main-header.theme-light .nav-menu a {
+    color: var(--color-black);
+}
+
+/* Ajusta o botão pill para o tema claro */
+.main-header.theme-light .btn-pill {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-color: var(--color-black);
+}
+
+.main-header.theme-light .btn-pill:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
