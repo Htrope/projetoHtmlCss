@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>instrutores</title>
+    <link rel="stylesheet" href="instrutores.css" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Grid de instrutores-->
+    <section class="grid">
+      <div class="card">
+        <img src="/projetoHtmlCss/assets/Nicole+Winter.webp" alt="Treinador" />
+        <div class="overlay">
+          <h2>NICOLE WINTER</h2>
+          <p>PILATES, YOGA</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/projetoHtmlCss/assets/aarom.webp" alt="Treinador" />
+        <div class="overlay">
+          <h2>AARON HUGHES</h2>
+          <p>TREINAMENTO DE FORÇA, BOXE</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/projetoHtmlCss/assets/Derrick.webp" alt="Treinador" />
+        <div class="overlay">
+          <h2>DERRICK SAWYERS</h2>
+          <p>CARDIO, CORE</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/projetoHtmlCss/assets/Aliyah.webp" alt="Treinador" />
+        <div class="overlay">
+          <h2>ALIYAH WILLIAMS</h2>
+          <p>CORE, CARDIO</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/projetoHtmlCss/assets/Omar.webp" alt="Treinador" />
+        <div class="overlay">
+          <h2>OMAR HARRIS</h2>
+          <p>CARDIO, IOGA</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/projetoHtmlCss/assets/Teshia+Harris.webp" alt="Treinador" />
+        <div class="overlay">
+          <h2>TESHIA MILLER</h2>
+          <p>BOXE, TREINO DE FORÇA</p>
+        </div>
+      </div>
+    </section>
+  <!---------------------------------------------------------------------------------->
+  <!--Formulário-->  
+  <section class="contato">
+  <!-- COLUNA ESQUERDA -->
+  <div class="texto">
+    <h1>PROCURA TREINAMENTO<br>PESSOAL?</h1>
+    <p>
+      Conte para gente suas metas pessoais de treinamento,
+      tire todas as dúvidas ou pergunte sobre o que quer saber mais.
+      Entraremos em contato em breve para conversar sobre as próximas etapas.
+    </p>
+  </div>
+
+  <!-- COLUNA DIREITA -->
+  <form class="formulario">
+    <label>Nome <span>(obrigatório)</span></label>
+    <div class="linha">
+      <input type="text" placeholder="Nome" required>
+      <input type="text" placeholder="Sobrenome" required>
+    </div>
+
+    <label>E-mail <span>(obrigatório)</span></label>
+    <input type="email" required>
+
+    <label>Metas de treinamento <span>(obrigatório)</span></label>
+    <small>Selecione todas as opções válidas</small>
+
+    <div class="checkboxes">
+      <label><input type="checkbox"> Perda de peso</label>
+      <label><input type="checkbox"> Ganho muscular</label>
+      <label><input type="checkbox"> Resistência</label>
+      <label><input type="checkbox"> Boa forma geral</label>
+      <label><input type="checkbox"> Lesões / reabilitação</label>
+      <label><input type="checkbox"> Ainda não sei</label>
+    </div>
+
+    <label>Com que frequência você quer treinar por semana? <span>(obrigatório)</span></label>
+    <select required>
+      <option value="">Selecione uma opção</option>
+      <option>1 a 2 vezes</option>
+      <option>3 a 4 vezes</option>
+      <option>5 ou mais</option>
+    </select>
+
+    <button type="submit">ENVIAR</button>
+  </form>
+</section>
+<!------------------------------------>
+</body>
+</html>
