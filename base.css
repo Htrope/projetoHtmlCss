@@ -1,0 +1,82 @@
+/* Importação das fontes oficiais do template */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro:wght@400;600;900&display=swap');
+
+:root {
+    /* Paleta de Cores Fiel (Predefinição da Imagem) */
+    --color-white: #ffffff;    /* Cor 1 */
+    --color-off-white: #f4f4f3; /* Cor 2 */
+    --color-black: #000000;    /* Cor 3 */
+    --color-dark-gray: #383838; /* Cor 4 */
+    --color-accent-black: #000000; /* Cor 5 */
+
+    /* Variáveis Semânticas para facilitar o grupo */
+    --font-heading: 'Anton', sans-serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+    --section-padding: 80px 4vw;
+    --transition: 0.3s ease-in-out;
+}
+
+/* Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Tipografia */
+h1, h2, h3, .logo {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+}
+
+p {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+
+.theme-dark {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.theme-light {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.theme-light h1, .theme-light h2, .theme-light h3 {
+    color: var(--color-black);
+}
+
+
+/* Botão Principal (Pill Shape) */
+.btn-pill {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid currentColor;
+    border-radius: 50px;
+    background: transparent;
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.btn-pill:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-color: var(--color-white);
+}
