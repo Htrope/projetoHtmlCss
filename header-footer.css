@@ -1,0 +1,232 @@
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: calc(10px + 0.5vw) 0;
+    background-color: var(--color-black);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.logo {
+    font-size: calc(19px + 1.8vw);
+    color: var(--color-white);
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-menu a {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 400;
+    transform: scaleX(1.05);
+    transition: opacity var(--transition);
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    opacity: 0.7;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.main-footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 40px 40px 40px 40px;
+    margin-bottom: 100px;
+}
+
+.footer-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-container h2 {
+    font-size: calc(19px + 1.8vw);
+    margin-bottom: 30px;
+}
+
+.newsletter-text p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-off-white);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+}
+
+.newsletter-form input {
+    width: 276px;
+    padding: 20px 20px;
+    border: none;
+    background-color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 18px;
+}
+.btn-pill {
+    background-color: var(--color-black);
+    border-color: var(--color-white);
+    color: var(--color-white);
+    display: inline-block;
+    size: auto;
+    font-size: 16px;
+    font-weight: 200;
+    transform: scaleX(1.07);
+}
+.newsletter-form .btn-pill{
+    align-self: center;
+    font-size: 19px;
+    height: 60px;
+    margin-right: 6px;
+}
+.newsletter-form {
+    background-color: transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.newsletter-form .btn-pill:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Linha Divisória */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid var(--color-white);
+    margin-bottom: 60px;
+}
+
+/* Grid de Informações Inferior */
+.footer-bottom-grid {
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr 1.6fr; 
+    gap: 60px;
+}
+
+.footer-col h3 {
+    font-family: var(--font-heading);
+    font-size: calc(19px + 1.8vw);
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.footer-links a {
+    font-size: 16px;
+    text-decoration: underline;
+    transition: opacity var(--transition);
+    color: var(--color-white);
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+.footer-col p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* Lado direito do Footer (Logo e Social) */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.social-icons a {
+    font-size: 20px;
+    filter: grayscale(1) invert(1); 
+    transition: opacity var(--transition);
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Responsividade Básica */
+@media (max-width: 1350px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form .btn-pill{
+        align-self: flex-end;
+        margin-top: 16px;
+    }
+}
+
+/* Modificador para Header Branco */
+.main-header.theme-light {
+    background-color: var(--color-white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Ajusta o texto, logo e links para preto quando o fundo for branco */
+.main-header.theme-light .logo,
+.main-header.theme-light .nav-menu a {
+    color: var(--color-black);
+}
+
+/* Ajusta o botão pill para o tema claro */
+.main-header.theme-light .btn-pill {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-color: var(--color-black);
+}
+
+.main-header.theme-light .btn-pill:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
